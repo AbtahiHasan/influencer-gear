@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+/* variables  */
+:root {
+    /* colors  */
+    --primary: #3A3A3A;
+    --secondary: #E02C6D;
+    --white: #ffffff;
+    --main-bg: #AAAAAA;
+    --heading-text: #18191F;
+    --dark: #000000DE;
+    --text-color: #787885;
+    --text-color2: #5E6366;
+    --rating-color:  #FB8200;
+    --gray: #ccc;
+    /* box shadow  */
+    --box-shadow: 5px 5px 10px rgba(0,0,0,0.05), -5px -5px 10px rgba(0,0,0,0.05);
+    /* fonts  */
+    --primary-font: 'Poppins', sans-serif;
+    /* width  */
+    --percent50: 50%;
+    --percent100: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+/* common css code  */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.primary {
+    color: var(--primary)
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+h1 {
+    font-size: 3.2rem;
+    line-height: 3.5rem;
+}
+h2 {
+    font-size: 2.2rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+h4 {
+    font-size: 1.2rem;
+}
+p {
+    font-size: 1rem;
+}
+.line {
+    margin: 20px auto;
+    width: 100%;
+    height: 1px;    
+    background: linear-gradient(to right, rgba(192, 204, 218, .2), rgba(192, 204, 218, .5),rgba(192, 204, 218, .2));
+    color: rgba(192, 204, 218, .05)
+}
+.font-bold {
+    font-weight: bold;
+}
+.font-weight4{
+    font-weight: 400;
+}
+.font-weight5{
+    font-weight: 500;
+}
+.font-weight6{
+    font-weight: 600;
+}
+.t-center {
+    text-align: center;
+}
+.t-right {
+    text-align: right;
+}
+.d-flex {
+    display: flex;
+}
+.flex-cal{
+    flex-direction: column;
+}
+.s-between {
+    justify-content: space-between;
+}
+.s-evenly {
+    justify-content: space-evenly;
+}
+.just-center {
+    justify-content: center;
+}
+.a-items-cen {
+    align-items: center;
+}
+.gap10 {
+    gap: 10px;
+}
+.gap20 {
+    gap: 20px;
+}
+.gap30 {
+    gap: 30px;
+}
+.d-grid {
+    display: grid;
+}
+.tem-col2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.tem-col3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.tem-col7 {
+    grid-template-columns: repeat(7, 1fr);
+}
+
+/* header nav  */
+.navigation {
+    margin-top: 20px;
+}
+.toggle-icon {
+    display: none;
+}
+.navlinks ul li a{
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.navlinks ul .search-bar {
+    display: none;
+}
+.navlinks.active ul .search-bar {
+    display: block;
+    width: 100%;
+    padding: 1rem  1.7rem;
+    position: relative;
+}
+.navlinks.active ul .search-bar input{
+    background: transparent;
+    padding: .7rem 1rem;
+    border-radius: 1.6rem;
+    width: 100%;
+    border: 1px solid var(--white);
+    outline: none;
+    color: var(--white);
+}
+.navlinks.active ul .search-bar i {
+    position: absolute;
+    top: 1.8rem;
+    right: 3rem;
+    color: var(--white);
+}
+
+.navicons i {
+    font-size: 1.8rem;
+}
+
+/* header banner  */
+.banner {
+    height: 90vh;
+}
+.banner-info .description {
+    margin-bottom: 1.5rem;
+}
+.book-now-btn {
+    margin-top: 1.2rem;
+    padding: .8rem 1.2rem;
+    border-radius: 1.6rem;
+    background-color: var(--secondary);
+    color: var(--white);
+}
+.banner-image {
+    position: relative;
+}
+.bg-image {
+    position: relative;
+}
+.bg-image .image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* brans  */
+.brands .brand-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* popular Collection  */
+.collection .title h2 {
+    margin-top: 7rem;
+}
+.product {
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    margin-top: 5rem;
+}
+.product .product-thambnail {
+    width: 100%;
+    height: auto;
+}
+.product .product-thambnail img{
+    width: 100%;
+}
+.product .stars i {
+    color: var(--rating-color);
+}
+.see-more-btn {
+    margin: 30px 0;
+}
+.see-more-btn a {
+    color: var(--secondary);
+}
+/* featured post  */
+.post .thambnail {
+    width: 90%;
+}
+.post .thambnail img{
+    width: 100%;
+}
+.post-info h2 {
+    line-height: 5rem;
+}
+.post-info p{
+    line-height: 2rem;
+    font-size: 1rem;
+}
+.join-now-btn {
+     margin-top: 2rem;
+}
+.join-now-btn a {
+    padding: 1rem 1.5rem;   
+    background: var(--secondary);
+    color: var(--white);
+}
+
+/* footer section  */
+.footer {
+    background: var(--heading-text);
+    color: var(--white);
+    text-align: center;
+    padding: 4rem 0;
+    margin-top: 6rem;
+}
+.footer h2{
+    margin: 1rem;
+}
+.footer p{
+    margin: 1rem;
+    font-size: 1.1rem;
+}
+
+.footer-social-link ul li a i{
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    color: var(--white);
+    font-size: 1.6rem;
+    border-radius: 50%;
+}
+
